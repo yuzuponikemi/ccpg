@@ -1,0 +1,37 @@
+[
+  {
+    "japanese": "猫",
+    "english": "cat",
+    "reading": "ねこ",
+    "examples": ["猫が寝ている。— The cat is sleeping."],
+    "tags": ["名詞", "動物"]
+  },
+  {
+    "japanese": "犬",
+    "english": "dog",
+    "reading": "いぬ",
+    "examples": ["犬が走っている。— The dog is running."],
+    "tags": ["名詞", "動物"]
+  },
+  {
+    "japanese": "食べる",
+    "english": "eat",
+    "reading": "たべる",
+    "examples": ["りんごを食べる。— I eat an apple."],
+    "tags": ["動詞"]
+  },
+  {
+    "japanese": "飲む",
+    "english": "drink",
+    "reading": "のむ",
+    "examples": ["水を飲む。— I drink water."],
+    "tags": ["動詞"]
+  },
+  {
+    "japanese": "本",
+    "english": "book",
+    "reading": "ほん",
+    "examples": ["本を読む。— I read a book."],
+    "tags": ["名詞"]
+  }
+]

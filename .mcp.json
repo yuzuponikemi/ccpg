@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anthropic-ai/mcp-filesystem@latest",
+        "/Users/ikmx/source/personal/ccpg"
+      ]
+    }
+  }
+}

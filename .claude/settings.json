@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m pytest*)",
+      "Bash(python3 -m py_compile*)",
+      "Bash(python3 src/*)",
+      "Bash(ls *)",
+      "Bash(cat *)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(sudo *)",
+      "Bash(curl * | bash*)",
+      "Bash(wget * | bash*)",
+      "Bash(rm *data/*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "echo '📋 リマインダー: 型ヒント必須・docstring は日本語・テストは pytest'"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "bash scripts/lint-check.sh",
+        "matcher": "Write"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "bash scripts/guard.sh",
+        "matcher": "Bash"
+      }
+    ]
+  }
+}
